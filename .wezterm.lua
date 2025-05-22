@@ -6,19 +6,20 @@ local config = wezterm.config_builder()
 
 config.font_size = 12
 config.line_height = 1.2
-config.font = wezterm.font({
-	--family = "FiraCode Nerd Font",
-	family = "Hack Nerd Font Mono",
-	-- weight = "Medium",
-	weight = "Bold",
+config.font = wezterm.font_with_fallback({
+	"BorgSansMono",
+	"Monoisome-Regular",
+	"Hack Nerd Font Mono",
+	"JetBrains Mono",
 })
 
 config.color_scheme = "flexoki-dark"
 
 -- shell
-config.default_prog = {
-	"pwsh",
-}
+-- config.default_prog = {
+-- "bash",
+-- }
+
 config.initial_cols = 120
 config.initial_rows = 28
 config.enable_tab_bar = false
