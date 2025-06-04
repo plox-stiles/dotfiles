@@ -1,0 +1,6 @@
+linux:
+  bashrc: '~/.bashrc'
+  nvim: '~/.config/nvim'
+  vim: '~/.vimrc'
+  tmux: '~/.tmux.conf'
+  wallpapers: '~/.local/wallpaper'
